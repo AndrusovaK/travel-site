@@ -1,0 +1,53 @@
+
+/*********************************
+
+Page Header
+
+*********************************/
+
+.page-header{
+
+	&--dark-purple {
+		background-color: @color__purple-dark;
+		color: rgba(255,255,255, 0.75);
+		font-size: @font-size--small;
+		text-transform: uppercase;
+
+		.row {
+			padding: 10px 0;
+			height: 80px;
+			.column-dir();
+			text-align: center;
+
+
+			.media-tablet({
+				.row-dir();
+				.main-between();
+				height: 40px;
+				.cross-center();
+				text-align: left;
+				});
+		}
+	}
+
+	&__email {
+			margin-right: 17px;
+			display: inline-block;
+			vertical-align: middle;
+	}
+
+	&__phone {
+	}
+}
+
+.sprite__envelope:before {
+	margin-right: 14px;
+	vertical-align: middle;
+
+}
+
+
+
+.page-header--purple {
+	background-color: @color__purple;
+}

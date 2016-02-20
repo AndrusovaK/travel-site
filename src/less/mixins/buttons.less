@@ -1,13 +1,7 @@
-// @import '../variables.less'; // Можно удалять, это только для удобства написания кода.
-
-
-
 //------------------------------------------------------------------------------
 //  Общие стиля любой кнопки
 //------------------------------------------------------------------------------
-//  Закомментированы строки, служащие для одного цветового оформления кнопок.
-//  Закомментированы строки с селекторами наведения, активности, блокированности.
-//------------------------------------------------------------------------------
+
 
 .btn() {
   display: inline-block;
@@ -16,48 +10,21 @@
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
-  font-weight: 400;
+  font-weight: 500;
   padding: @btn-padding;
-  font-size: @font-size;
+  font-size: @font-size--large;
   line-height: @btn-line-height;
-  border: 1px solid;
-  // border: 1px solid transparent;
-  // background-color: @color__gray-lighter;
-  // color: @text-color;
+  background-color: @color__pink;
+  color: @color__white;
+  border-radius: @border-radius;
+  box-shadow: @box-shadow;
+  text-decoration: none;
 
-  & when (@border-radius > 0) {
-    border-radius: @border-radius;
-  }
 
   // &--hover,
   &:hover {
-    text-decoration: none;
-    // color: @text-color;
-    // background-color: darken(@color__gray-lighter, 10%);
-    // border-color: transparent;
-  }
-
-  // &--active,
-  &:active,
-  &:focus {
-    text-decoration: none;
-    // color: @text-color;
-    // background-color: darken(@color__gray-lighter, 15%);
-    // border-color: transparent;
-  }
-
-  &:focus {
-    .focus();
-  }
-
-  // &--disabled,
-  &:disabled {
-    cursor: not-allowed;
-    opacity: @opacity;
-
-    a& {
-      pointer-events: none;
-    }
+    box-shadow: @box-shadow__hover;
+    color: @color__white
   }
 }
 
@@ -66,33 +33,12 @@
 //------------------------------------------------------------------------------
 //  Примесь-генератор цветовых стилей
 //------------------------------------------------------------------------------
-//  Закомментированы строки с селекторами наведения, активности, блокированности.
-//------------------------------------------------------------------------------
 
-.btn-color-variant(@color: @text-color; @background: @color__gray-lighter; @border: @color__gray-lighter) {
+
+.btn-color-variant(@color: @color__pink; @background: @color__white) {
   color: @color;
   background-color: @background;
-  border-color: @border;
-
-  // &--hover,
   &:hover {
     color: @color;
-    background-color: darken(@background, 10%);
-    border-color: darken(@border, 12%);
-  }
-
-  // &--active,
-  &:active,
-  &:focus {
-    color: @color;
-    background-color: darken(@background, 15%);
-    border-color: darken(@border, 17%);
-  }
-
-  // &--disabled,
-  &:disabled {
-    color: @color;
-    background-color: @background;
-    border-color: @border;
   }
 }

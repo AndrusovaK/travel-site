@@ -3,7 +3,7 @@
 // Include vendor CSS files
 // ========================
 
-// @import "vendor/normalize.css";
+@import  'vendor/normalize.less';
 
 // Include custom CSS files
 // ========================
@@ -24,7 +24,10 @@
 /* @import 'mixins/table-responsive-data.less'; */
 @import 'mixins/utilities_responsive.less';
 @import 'mixins/utilities_text.less';
+@import 'mixins/flex.less';
+@import 'mixins/media.less';
 
+@import 'components/fonts.less';
 @import 'components/global_scaffolding.less';      // Базис
 @import 'components/global_grid.less';             // Модульная сетка
 @import 'components/global_type.less';             // Типографика
@@ -34,3 +37,5 @@
 @import 'components/buttons.less';                 // Кнопки
 
 @import 'includes/_svg-sprite.less';
+
+@import 'components/page-header.less';

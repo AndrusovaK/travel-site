@@ -1,33 +1,31 @@
 //------------------------------------------------------------------------------
 //  Цвет
 //------------------------------------------------------------------------------
+@color__white:                #ffffff;
+@color__purple:               #653eb3;
+@color__purple-dark:           #5031a4;
+@color__pink:                 #fb4381;
 
-@color__primary:              #0275d8;
-@color__success:              #5cb85c;
-@color__info:                 #5bc0de;
-@color__warning:              #f0ad4e;
-@color__danger:               #d9534f;
+@color__gray:                 #8c8c8c;
+@color__gray-dark:            #3e3e3e;
+@color__gray-light:           #c5c5c5;
+@color__gray-lightest:        #dfdaed;
 
-@color__gray:                 #808080;
-@color__gray-darker:          #2D2D2D;
-@color__gray-dark:            #ffffff;
-@color__gray-light:           #999;
-@color__gray-lighter:         #ddd;
-@color__gray-lightest:        #F3F3F3;
 
-@body-bg:                     #fff;
-@text-color:                  @color__gray-darker;
+@body-bg:                     #fafafa;
+@text-color:                  @color__gray;
 
-@link-color:                  @color__primary;
-@link-color--hover:           darken(@link-color, 20%);
+@link-color:                  @color__purple;
+@link-color--hover:           @color__pink;
 
 
 
 //------------------------------------------------------------------------------
 //  Типографика
 //------------------------------------------------------------------------------
+/* "Helvetica Neue", Helvetica, Arial, */
 
-@font-family:                 "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family:                 'Roboto';
 @font-family--serif:          Georgia, "Times New Roman", Times, serif;
 @font-family--monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
 
@@ -38,28 +36,29 @@
 @font-size-html--xl:          10px;
 @font-size-html--xxl:         10px;
 
-@font-size:                   1.4rem;
+@font-size:                   1.5rem;
+@font-size--medium:           1.6rem;
 @font-size--large:            1.8rem;
 @font-size--small:            1.2rem;
 
-@font-size--h1:               3.0rem;
-@font-size--h2:               2.4rem;
-@font-size--h3:               2.0rem;
+@font-size--h1:               4rem;
+@font-size--h2:               3.4rem;
+@font-size--h3:               2.2rem;
 @font-size--h4:               @font-size--large;
 @font-size--h5:               @font-size;
+@font-size--h6:               @font-size--small;
 
-@line-height:                 1.4em;
+@line-height:                 1em;
 
 @type-spacer:                 1em; // Нижний отступ параграфа, списков...
 
-@font-size--h6:               @font-size--small;
 
 @headings__font-family:       @font-family;
 @headings__margin-top:        1.5em;
 @headings__margin-bottom:     1em;
 @headings__font-weight:       400;
 @headings__line-height:       1.2em;
-@headings__color:             inherit;
+@headings__color:             @color__gray-dark;
 
 
 
@@ -74,7 +73,7 @@
 @border-radius:               0.3rem;
 
 // Прозрачность
-@opacity:                     0.65;
+@opacity:                     0.75;
 
 
 
@@ -110,21 +109,16 @@
 //  Кнопки и формы
 //------------------------------------------------------------------------------
 
-@btn-padding:                 0.5rem 1.5rem;
-@btn-line-height:             2rem;
+@btn-padding:                 1.8rem 1.8rem;
+@btn-line-height:             1.2rem;
 
-@field-padding:               0.5rem 1rem;
+@field-padding:               2.5rem 0.2rem 1.5rem 0.2rem;
 @field-line-height:           2rem;
-@field-height:                3.2rem;
+@field-height:                6rem;
 @field-border:                1px solid @color__gray-light;
 
+@box-shadow:                  0 1px 3px rgba(0,0,0,0.25);
+@box-shadow__hover:           0 2px 5px rgba(0,0,0,0.3);
 
 
-//------------------------------------------------------------------------------
-//  КОМПОНЕНТ: Бейджи (тест)
-//------------------------------------------------------------------------------
 
-@badge__color:                #fff;
-@badge__bg:                   @color__gray;
-@badge__font-weight:          bold;
-@badge__border-radius:        3px;
