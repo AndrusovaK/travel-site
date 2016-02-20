@@ -1,11 +1,26 @@
 doctype html
-html
-	head
+html(lang="ru")
+	include components/head
 	body
-		.header
-			nav
-				include components/nav
+		include components/header
+		include components/slider
+		include components/about
+		.promo-line.promo-line--purple
+			.container
+				.row.row--space-between
+					p.promo-line__text Need useful advice? You're in the right place!
+					a.btn Contact Us For This
+		include components/popular
+		.promo-line
+			.container
+				.row
+					p.promo-line__text Love discounts? Subscribe to newsletter!
+					form.subscription
+						input(placeholder="Your email").subscription__field
+						input(type="submit").subscription__btn
+		include components/reviews
+		include components/footer
 
-			a(href="#") push me
-			a.fool i'm a fool
+
+
 		footer.footer good by
