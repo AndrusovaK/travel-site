@@ -7,20 +7,23 @@ html(lang="ru")
 		include components/about
 		.promo-line.promo-line--purple
 			.container
-				.row.row--space-between
+				.row.promo-line__info
 					p.promo-line__text Need useful advice? You're in the right place!
-					a.btn Contact Us For This
+					a.btn.btn--md Contact Us For This
 		include components/popular
 		.promo-line
 			.container
-				.row
+				.row.promo-line__info
 					p.promo-line__text Love discounts? Subscribe to newsletter!
 					form.subscription
 						input(placeholder="Your email").subscription__field
-						input(type="submit").btn.btn--white
+						input(type="submit").btn.btn--md.btn--white
 		include components/reviews
 		include components/footer
 
 
 
 		footer.footer good by
+		script(type="text/javascript", src="js/vendor/vendor-bundle.min.js")
+		script(type='text/javascript', src=' http://code.jquery.com/jquery-migrate-1.3.0.min.js')
+		script(type="text/javascript", src='js/custom/custom-bundle.min.js')

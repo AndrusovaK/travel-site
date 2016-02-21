@@ -6,6 +6,9 @@ Page Header
 *********************************/
 
 .page-header{
+	& svg {
+		fill: currentColor;
+	}
 
 	&--dark-purple {
 		background-color: @color__purple-dark;
@@ -16,12 +19,10 @@ Page Header
 		.row {
 			padding: 10px 0;
 			height: 80px;
-			.column-dir();
 			text-align: center;
 
 
 			.media-tablet({
-				.row-dir();
 				.main-between();
 				height: 40px;
 				.cross-center();
@@ -31,23 +32,102 @@ Page Header
 	}
 
 	&__email {
-			margin-right: 17px;
-			display: inline-block;
-			vertical-align: middle;
+			margin-right: 16px;
+			& svg {
+				margin-right: 12px;
+				margin-bottom: -1px;
+			}
 	}
 
 	&__phone {
+			& svg {
+				margin-right: 11px;
+				margin-bottom: -1px;
+			}
+	}
+
+	&--purple {
+	background-color: @color__purple;
+	padding: 30px 0;
+		& .row {
+			.column-dir();
+			text-align: center;
+
+			.media-tablet({
+				.row-dir();
+				.cross-center();
+				.main-between();
+				});
+		}
+	}
+
+	&__brand {
+		color: @color__white;
+		font-size: 3rem;
+		& img, span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		& img {
+			margin-right: 11px;
+		}
 	}
 }
 
-.sprite__envelope:before {
-	margin-right: 14px;
-	vertical-align: middle;
+.social-links {
+	text-align: center;
+	&__item {
+		display: inline-block;
+		width: 19px;
+		text-align: center;
+		margin-right: 20px;
+		color: rgba(255,255,255, 0.75);
+	}
 
+	&__item:last-child {
+		margin-right: 0;
+	}
+
+	.media-tablet ({
+		text-align: right;
+	});
 }
 
-
-
-.page-header--purple {
-	background-color: @color__purple;
+.main-nav {
+	text-align: right;
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		.main-between();
+		.cross-center();
+	}
+	&__item {
+		display: inline-block;
+		position: relative;
+		padding: 5px 10px;
+	}
+	&__link {
+		color: @color__gray-lightest;
+		text-transform: uppercase;
+	}
+/* 	&__item:hover {
+	padding: 22px 17px 0 18px;
+	background-color: @color__white;
+	color: @color__gray-dark;
+	& .main-nav__nested-list {
+		visibility: visible;
+	}
+	} */
+	&__nested-list {
+		position: absolute;
+		visibility: hidden;
+		text-align: left;
+		list-style: none;
+	}
+	&__nested-item a {
+		display: block;
+		color: @color__gray-dark;
+		padding: 12px 0;
+		background-color: @color__white;
+	}
 }

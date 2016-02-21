@@ -31,7 +31,7 @@ module.exports = {
                 Clean: ['dist/**/*', '!dist/.gitignore'],
                 Fonts: 'dist/css/fonts',
                 Svg: 'dist/svg',
-                SvgSprite: 'dist/svg/sprite/svg-sprite.svg',
+                SvgSprite: 'dist/img',
                 SvgSpriteNoSvg: 'dist/svg/sprite/svg-sprite.png',
                 SvgSpriteCSS: 'src/less/includes/_svg-sprite.less'
             }

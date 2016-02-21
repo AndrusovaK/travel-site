@@ -3,27 +3,45 @@ header.page-header
 		.container
 			.row
 				.col-xs-12.col-md-6.col-xl-4
-					span.page-header__email.sprite__envelope info@tripway.com
-					span.page-header__phone +321 233 4567
+					span.page-header__email
+						svg(width='18', height='12')
+							use(xlink:href='#envelope')
+						|info@tripway.com
+					span.page-header__phone
+						svg(width='14', height='12')
+							use(xlink:href='#phone')
+						|+321 233 4567
 				.col-xs-12.col-md-6.col-xl-4
 					.social-links
-						span.social-links__item.social-links__fb
-						span.social-links__item.social-links__pint
-						span.social-links__item.social-links__tw
-						span.social-links__item.social-links__vimeo.sprite__vimeo
-						span.social-links__item.social-links__inst
-						span.social-links__item.social-links__google.sprite__google
+						a(href='#').social-links__item
+							svg(width='7', height='15')
+								use(xlink:href='#facebook')
+						a(href='#').social-links__item
+							svg(width='12', height='15')
+								use(xlink:href='#pinterest')
+						a(href='#').social-links__item
+							svg(width='16', height='13')
+								use(xlink:href='#twitter')
+						a(href='#').social-links__item
+							svg(width='16', height='14')
+								use(xlink:href='#vimeo')
+						a(href='#').social-links__item
+							svg(width='15', height='15')
+								use(xlink:href='#instagram')
+						a(href='#').social-links__item
+							svg(width='16', height='15')
+								use(xlink:href='#google')
 	.page-header--purple
 		.container
 			.row
 				.col-xs-12.col-md-3.col-xl-2
 					a.page-header__brand(href="#")
-						img(href="svg/icon-logo.svg")
+						img(src="svg/icon_logo.svg", width='36', height='36')
 						span TripWay
-				.col-xs-12.col-md-9.col-xl-10
+				.col-xs-12.col-md-9.col-xl-7
 					nav.main-nav
 						ul.main-nav__list
-							li.main-nav__item: a(href="#").main-nav__link 	Home
+							li.main-nav__item: a(href="#").main-nav__link Home
 							li.main-nav__item
 								a(href="#").main-nav__link About
 								ul.main-nav__nested-list
@@ -40,4 +58,6 @@ header.page-header
 									li.main-nav__nested-item: a(href="#") 	Australia
 							li.main-nav__item: a(href="#").main-nav__link 	Blog
 							li.main-nav__item: a(href="#").main-nav__link Contacts
+
+
 

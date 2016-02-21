@@ -1,3 +1,9 @@
+.media-sm(@rules) {
+	@media (min-width: @screen-sm) {
+		@rules();
+	};
+};
+
 .media-tablet(@rules) {
 	@media (min-width: @screen-md) {
 		@rules();

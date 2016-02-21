@@ -2,18 +2,21 @@
 	.container-fluid
 		.row
 			.wrapper
-				.promo-slider
-					.promo__slider-item
-					.promo__slider-item
+				.promo-slider#promo-slider
+					.promo-slider__item
+					.promo-slider__item
 				.promo-slider__nav
-					a(href="#").promo-slider-prev
-					a(href="#").promo-slider-next
+					a(href="#").promo-slider__prev
+						svg(width='20', height='35')
+							use(xlink:href='#arrow-left')
+					a(href="#").promo-slider__next
+						svg(width='20', height='35')
+							use(xlink:href='#arrow-right')
 
 	.container
-		.row
-			.promo__title.col.xs-12.col-md-3.col-xl-3 San Francisco
-			.promo__text.col.xs-12.col-md-6.col-xl-6 Mauris fermentum tortor non enim aliquet 	ndimentum. Nam aliquam pretium sem feugiat. Duis sem est, viverra eu interdum.
-			.col.xs-12.col-md-3.col-xl-3
-				a.btn More About This
+		.row.promo__info
+			.promo__title San Francisco
+			p.promo__text Mauris fermentum tortor non enim aliquet 	ndimentum. Nam aliquam pretium sem feugiat. Duis sem est, viverra eu interdum.
+			a.btn.btn--md More About This
 
 

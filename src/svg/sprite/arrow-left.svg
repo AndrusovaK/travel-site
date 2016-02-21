@@ -1,11 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="35" viewBox="0 0 20 35">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="arrow-left.svg" class="cls-1" d="M34.741,458.741a2.524,2.524,0,0,0,0,3.569l14.95,14.949a2.523,2.523,0,1,0,3.568-3.568l-14.949-14.95A2.524,2.524,0,0,0,34.741,458.741Zm0,3.517a2.523,2.523,0,0,1,0-3.568l14.95-14.95a2.523,2.523,0,1,1,3.568,3.569L38.309,462.258A2.522,2.522,0,0,1,34.741,462.258Z" transform="translate(-34 -443)"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="35" viewBox="0 0 20 35">
+  <image id="left" width="20" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAjCAMAAACjKNoqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAP1BMVEUAAAD///////////////////////////////////////////////////////////////////////////8AAABDBdx4AAAAE3RSTlMAJ8X6vyEp6L3zviQl9FHnI/LG4UEnqgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABYSURBVCjP5dJJDoBACETRUlvaear739WOwwJSFzCyfCEsyAf8VHWT2mCWSXbC2AvjICyPwuzjNglDEob5wsW/8N5c/eZzM6j9QDelrqVXdwgNfZaSj1LyCShVD7jhjkwCAAAAAElFTkSuQmCC"/>
 </svg>

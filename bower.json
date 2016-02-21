@@ -12,7 +12,8 @@
     "tests"
   ],
   "devDependencies": {
-    "normalize-css": "normalize.css#~3.0.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "slick-carousel": "^1.5.9"
+  }
 }

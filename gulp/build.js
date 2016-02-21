@@ -14,6 +14,7 @@ gulp.task('build', function(callback) {
         'svg-sprite',
         'fonts',
         'less',
+        'css',
         'txt',
         //'gh-pages',
         callback)
