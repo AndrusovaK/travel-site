@@ -1,28 +1,39 @@
+.section-title {
+	font-size: 2.4rem;
+	padding: 0 15px;
+	margin-bottom: 40px;
+
+	.media-tablet ({
+		.h2();
+		margin-top: 50px;
+		margin-bottom: 60px;
+	});
+}
+
+
 .popular {
 	padding: 35px 0 65px 0;
+}
 
-
-
-	&__title {
-		font-size: 2.4rem;
-		padding: 0 15px;
-		margin-bottom: 40px;
-
-		.media-tablet ({
-			.h2();
-			margin-top: 50px;
-			margin-bottom: 60px;
-		});
-	}
+.popular__wrapper {
+	.main-between();
+	padding: 0 15px;
 }
 
 .popular-item {
+	display: flex;
+	.column-dir();
+	.main-between();
 	.shadowed-box--light();
 	margin-bottom: 3rem;
-	height: 100%;
-	// display: flex;
-	// .column-dir();
 
+	.media-sm({
+		flex-basis: 48%;
+		});
+
+	.media-tablet({
+		flex-basis: 31.5%;
+	});
 
 	&__image {
 		width: 100%;
@@ -33,6 +44,14 @@
 
 	&__info {
 		padding: 0 21px 30px;
+		flex-grow: 5;
+		display: flex;
+		.column-dir();
+		.cross-start();
+
+		.btn {
+			margin-top: auto;
+		}
 	}
 
 	&__title {

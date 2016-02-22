@@ -1,0 +1,28 @@
+input,
+textarea {
+	border: none;
+	outline: none;
+	border-bottom: @field-border;
+	height: @field-height;
+	line-height: @field-line-height;
+	padding: @field-padding;
+}
+
+.field{
+	// width: 285px;
+
+
+	margin-bottom: 1rem;
+
+	&--medium {
+		width: 285px;
+	}
+
+	&:focus {
+		border-bottom-color: @color__pink;
+	}
+
+	.media-full({
+		margin-right: 2.3rem;
+	});
+}

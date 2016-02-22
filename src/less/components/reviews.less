@@ -1,0 +1,42 @@
+.reviews {
+	padding: 35px 0 100px 0;
+}
+
+.review-item {
+	padding: 24px 24px 24px 27px;
+	margin-bottom: 30px;
+	.shadowed-box--light();
+
+	display: flex;
+	.column-dir();
+	.main-between();
+	.cross-center();
+
+	.media-tablet({
+		.row-dir();
+		.cross-start();
+		});
+
+	&__image {
+		flex: 0 0 auto;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		padding-bottom: 25px;
+		border-bottom: 1px solid #eaeaea;
+	}
+
+	&__author {
+		color: @color__gray-dark;
+		font-style: normal;
+	}
+
+	&__author-name {
+		font-weight: 700;
+	}
+
+	&__author-job {
+		font-weight: 500;
+	}
+}
