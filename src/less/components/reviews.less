@@ -1,5 +1,10 @@
 .reviews {
 	padding: 35px 0 100px 0;
+
+	&__wrapper {
+		padding: 0 15px;
+		.main-between();
+	}
 }
 
 .review-item {
@@ -13,6 +18,8 @@
 	.cross-center();
 
 	.media-tablet({
+		width: 49%;
+		flex-grow:0;
 		.row-dir();
 		.cross-start();
 		});
@@ -22,14 +29,25 @@
 		margin-bottom: 20px;
 	}
 
+	blockquote {
+		align-self: stretch;
+		display: flex;
+		.column-dir();
+
+		.media-tablet({margin-left: 2.5rem;});
+	}
+
 	&__text {
 		padding-bottom: 25px;
 		border-bottom: 1px solid #eaeaea;
+		flex-grow: 5;
 	}
 
 	&__author {
 		color: @color__gray-dark;
+		display: block;
 		font-style: normal;
+		flex: 0 0 auto;
 	}
 
 	&__author-name {
