@@ -39,25 +39,32 @@ header.page-header
 						img(src="svg/icon_logo.svg", width='36', height='36')
 						span TripWay
 				.col-xs-12.col-md-9.col-xl-7
-					nav.main-nav
-						ul.main-nav__list
-							li.main-nav__item: a(href="#").main-nav__link Home
-							li.main-nav__item
-								a(href="#").main-nav__link About
-								ul.main-nav__nested-list
-									li.main-nav__nested-item: a(href="#") 	Testimonial
-									li.main-nav__nested-item: a(href="#") FAQ
-							li.main-nav__item: a(href="#").main-nav__link 	Destinations
-							li.main-nav__item
-								a(href="#").main-nav__link Gallery
-								ul.main-nav__nested-list
-									li.main-nav__nested-item: a(href="#") 	Europe
-									li.main-nav__nested-item: a(href="#") 	Africa
-									li.main-nav__nested-item: a(href="#") 	North America
-									li.main-nav__nested-item: a(href="#") 	South America
-									li.main-nav__nested-item: a(href="#") 	Australia
-							li.main-nav__item: a(href="#").main-nav__link 	Blog
-							li.main-nav__item: a(href="#").main-nav__link Contacts
+					.main-nav__wrapper
+						a(href='')#toggler.toggler
+							span
+						nav.main-nav
+							ul.main-nav__list
+								li.main-nav__item: a(href="#").main-nav__link Home
+								li.main-nav__item.main-nav__item--has-children
+									a(href="#").main-nav__link About
+										svg(width='8', height='4')
+											use(xlink:href="#arrow-down")
+									ul.main-nav__nested-list
+										li.main-nav__nested-item: a(href="#") 	Testimonial
+										li.main-nav__nested-item: a(href="#") FAQ
+								li.main-nav__item: a(href="#").main-nav__link 	Destinations
+								li.main-nav__item.main-nav__item--has-children
+									a(href="#").main-nav__link.main-nav__link--has-children Gallery
+										svg(width='8', height='4')
+											use(xlink:href="#arrow-down")
+									ul.main-nav__nested-list
+										li.main-nav__nested-item: a(href="#") 	Europe
+										li.main-nav__nested-item: a(href="#") 	Africa
+										li.main-nav__nested-item: a(href="#") 	North America
+										li.main-nav__nested-item: a(href="#") 	South America
+										li.main-nav__nested-item: a(href="#") 	Australia
+								li.main-nav__item: a(href="#").main-nav__link 	Blog
+								li.main-nav__item: a(href="#").main-nav__link Contacts
 
 
 

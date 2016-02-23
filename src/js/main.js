@@ -16,6 +16,8 @@
     });
 };*/
 
+//Промо-слайдер на главной странице
+
 $(function () {
     $('#promo-slider').slick({
       slidesToShow: 1,
@@ -29,6 +31,39 @@ $(function () {
       prevArrow: $('.promo-slider__prev'),
       nextArrow: $('.promo-slider__next'),
     });
+});
+
+
+//Адаптивное меню
+
+$(document).ready(function(){
+    var toggler = $('#toggler');
+    var menu = $('.main-nav');
+    var wid = $(window).width();
+
+    $(toggler).on('click', function(e) {
+      e.preventDefault();
+      toggler.toggleClass('toggler--close');
+      menu.slideToggle();
+    });
+
+    $(window).resize(function(){
+
+      if(wid > 768 && menu.is(':hidden')) {
+           menu.removeAttr('style');
+      }
+
+    });
+
+    var hasChildren = $('.main-nav__item--has-children');
+    var nestedNav = $('.main-nav__nested-list');
+
+
+    $(hasChildren).hover(function (){
+      if(wid > 768) {
+        $(this).find(nestedNav).slideToggle();
+      }
+  });
 });
 
 
