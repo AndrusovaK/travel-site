@@ -16,6 +16,6 @@ gulp.task('build', function(callback) {
         'less',
         'css',
         'txt',
-        //'gh-pages',
+        'gh-pages',
         callback)
 });

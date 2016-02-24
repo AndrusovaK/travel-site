@@ -71,7 +71,7 @@ $(document).ready(function(){
 {
     'use strict';
 
-    var file     = 'img/sprite.svg',
+    var file     = 'svg/sprite.svg',
         revision = 1;
 
     if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )

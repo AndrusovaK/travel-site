@@ -4,10 +4,10 @@ module.exports = {
             Src: {
                 Styles: 'src/less/**/*.less',
                 MainStyleFile: 'src/less/main.less',
-                Jade: 'src/jade/**/*.jade',
+                Jade: 'src/jade/*.jade',
                 Images: ['src/img/**/*.*', '!src/img/sprite/*.*'],
                 PngSprite: 'src/img/sprite/**/*.png',
-                GHPages: 'build/**/*',
+                GHPages: 'dist/**/*',
                 JS: 'src/js/**/*.*',
                 JSVendor: 'vendor/**/*.*',
                 BowerJSVendor: 'src/js/vendor/',
@@ -31,7 +31,7 @@ module.exports = {
                 Clean: ['dist/**/*', '!dist/.gitignore'],
                 Fonts: 'dist/css/fonts',
                 Svg: 'dist/svg',
-                SvgSprite: 'dist/img',
+                SvgSprite: 'dist/svg',
                 SvgSpriteNoSvg: 'dist/svg/sprite/svg-sprite.png',
                 SvgSpriteCSS: 'src/less/includes/_svg-sprite.less'
             }
@@ -39,7 +39,7 @@ module.exports = {
 
     // GitHub Pages options
     ghpOptions: {
-        remoteUrl: ""
+        remoteUrl: "git@github.com:AndrusovaK/travel-site.git"
     },
 
     // jsDoc3 options for JS documentation generating
