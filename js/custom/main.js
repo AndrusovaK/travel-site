@@ -136,7 +136,7 @@ sr.reveal('.promo__text');
 sr.reveal('.sr-btn');
 sr.reveal('.promo-line__text', {scale: 0.2});
 sr.reveal('.subscription');
-sr.reveal('.section-title', {viewFactor: 1});
+sr.reveal('.section-title');
 
 sr.reveal('.sr-delay-015', {delay: 150});
 sr.reveal('.sr-delay-03', {delay: 300});

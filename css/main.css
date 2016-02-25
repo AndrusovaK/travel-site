@@ -1,4 +1,4 @@
-.js .services__title, .js .services__text, .js .service-item, .js .promo__title, .js .promo__text, .js .sr-btn, .js .promo-line__text, .js .subscription {
+.js .services__title, .js .services__text, .js .service-item, .js .promo__title, .js .promo__text, .js .sr-btn, .js .promo-line__text, .js .subscription, .js .section-title {
     visibility : hidden;
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
@@ -208,11 +208,11 @@ a {
 a:hover {
     color : #fb4381;
 }
-a.invert-link {
+a.link-invert {
     color : #fb4381;
     text-decoration : none;
 }
-a.invert-link:hover {
+a.link-invert:hover {
     color : #653eb3;
 }
 img {
@@ -1733,6 +1733,9 @@ Page Header
 .services__text {
     font-size : 1.8rem;
 }
+.service-item {
+    text-align : center;
+}
 .row .service-item {
     padding : 25px 0;
 }
@@ -2312,4 +2315,24 @@ input:focus ~ .field__underline:before, input:focus ~ .field__underline:after {
     .copyright {
         text-align : right;
     }
+}
+.breadcrumb {
+    margin-bottom : 20px;
+    padding-top : 43px;
+}
+.breadcrumb ul {
+    margin : 0;
+    padding : 0;
+
+    list-style : none;
+}
+.breadcrumb__item {
+    display : inline-block;
+}
+.breadcrumb__item + li:before {
+    content : "\279D";
+
+    padding : 0 10px;
+
+    color : #c0c0c0;
 }
