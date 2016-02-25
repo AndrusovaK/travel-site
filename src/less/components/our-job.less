@@ -1,0 +1,40 @@
+.our-job {
+	padding-top: 23px;
+
+	&__wrapper {
+		.shadowed-box--light();
+		padding: 30px;
+		margin-left: 0;
+		margin-right: 0;
+
+
+		.media-tablet({
+			flex-wrap: nowrap;
+			.main-between();
+		});
+
+	}
+
+	&__image {
+		max-width: 100%;
+		margin: 0 auto 12px;
+
+		.media-tablet ({
+			max-width: 50%;
+			margin-right: 2.75%;
+		});
+
+		.media-full ({
+			max-width: 30.7%;
+			});
+	}
+
+	&__info {
+		max-width: 100%;
+
+		.media-tablet({
+			max-width: 66.5%;
+			});
+		flex-shrink: 10;
+	}
+}

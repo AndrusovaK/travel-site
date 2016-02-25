@@ -1,0 +1,31 @@
+- var breadcrumbs = {'Home':'index.html', 'About':'about.html'}
+
+doctype html
+html(lang="ru").no-js
+	include components/head
+	body
+		//Header
+		include components/header
+		//
+			Main
+		main
+			.container
+				.row
+					.col-xs-12
+						include components/breadcrumbs
+				.row
+					.col-xs-12
+						h1.page-title About us
+			include components/our-job
+			include components/our-team
+			include components/our-history
+			.container
+				include components/service-items
+			//
+				Footer
+			include components/footer
+
+		script(type="text/javascript", src="js/vendor/vendor-bundle.min.js")
+		script(type='text/javascript', src=' http://code.jquery.com/jquery-migrate-1.3.0.min.js')
+		script(type="text/javascript", src='js/custom/custom-bundle.js')
+

@@ -1,0 +1,7 @@
+
+//Breadcrums
+
+.breadcrumb
+	ul
+		each linkPath, linkName in breadcrumbs
+			li.breadcrumb__item: a.link-invert(href=linkPath) #{linkName}

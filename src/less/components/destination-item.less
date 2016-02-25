@@ -26,6 +26,30 @@
 		}
 	}
 
+	&__info {
+		padding: 0 21px 30px;
+		flex-grow: 5;
+		display: flex;
+		.column-dir();
+		.cross-start();
+
+		.btn {
+			margin-top: auto;
+		}
+	}
+
+	&__link {
+		.h3();
+		margin-right: 14px;
+	}
+
+	&__price {
+		font-size: @font-size--large;
+		color: @color__purple;
+	}
+
+// Hover
+
 	&__see-more {
 		position: absolute;
 		right: 0;
@@ -76,34 +100,7 @@
 			border-radius: 0;
 			opacity: 0.7;
 		}
-
-
 	}
 
-	&__info {
-		padding: 0 21px 30px;
-		flex-grow: 5;
-		display: flex;
-		.column-dir();
-		.cross-start();
 
-		.btn {
-			margin-top: auto;
-		}
-	}
-
-	&__title {
-
-	}
-
-	&__link {
-		.h3();
-
-		margin-right: 14px;
-	}
-
-	&__price {
-		font-size: @font-size--large;
-		color: @color__purple;
-	}
 }
