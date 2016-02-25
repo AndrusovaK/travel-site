@@ -1,4 +1,4 @@
-.js .services__title, .js .services__text, .js .service-item, .js .promo__title, .js .promo__text, .js .sr-btn, .js .promo-line__text, .js .subscription, .js .section-title {
+.js .services__title, .js .services__text, .js .service-item, .js .promo__title, .js .promo__text, .js .sr-btn, .js .promo-line__text, .js .subscription {
     visibility : hidden;
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
