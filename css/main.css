@@ -208,6 +208,13 @@ a {
 a:hover {
     color : #fb4381;
 }
+a.invert-link {
+    color : #fb4381;
+    text-decoration : none;
+}
+a.invert-link:hover {
+    color : #653eb3;
+}
 img {
     max-width : 100%;
     height : auto;
