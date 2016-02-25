@@ -11,9 +11,9 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
-    "slick-carousel": "^1.5.9"
+    "slick-carousel": "^1.5.9",
+    "scrollreveal": "^3.0.9"
   }
 }

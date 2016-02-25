@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page title</title>
   <link rel="stylesheet" href="css/vendor/slick.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
 
   <body>
+    <!--Header-->
     <header class="page-header">
       <div class="page-header--dark-purple">
         <div class="container">
@@ -86,170 +92,183 @@
         </div>
       </div>
     </header>
-    <div class="promo">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="wrapper">
-            <div id="promo-slider" class="promo-slider">
-              <div class="promo-slider__item"></div>
-              <div class="promo-slider__item"></div>
+    <!--Main
+    -->
+    <main>
+      <div class="promo">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="wrapper">
+              <div id="promo-slider" class="promo-slider">
+                <div class="promo-slider__item"></div>
+                <div class="promo-slider__item"></div>
+              </div>
+              <div class="promo-slider__nav">
+                <a href="#" class="promo-slider__prev"> <svg width="20" height="35">
+                    <use xlink:href="#arrow-left"></use>
+                  </svg></a>
+                <a href="#" class="promo-slider__next"> <svg width="20" height="35">
+                    <use xlink:href="#arrow-right"></use>
+                  </svg></a>
+              </div>
             </div>
-            <div class="promo-slider__nav">
-              <a href="#" class="promo-slider__prev"> <svg width="20" height="35">
-                  <use xlink:href="#arrow-left"></use>
-                </svg></a>
-              <a href="#" class="promo-slider__next"> <svg width="20" height="35">
-                  <use xlink:href="#arrow-right"></use>
-                </svg></a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row promo__info">
+            <div class="promo__title">San Francisco</div>
+            <p class="promo__text sr-delay-015">Mauris fermentum tortor non enim aliquet ndimentum. Nam aliquam pretium sem feugiat. Duis sem est, viverra eu interdum.</p><a class="btn btn--md sr-btn sr-delay-03">More About This</a> </div>
+        </div>
+      </div>
+      <!--Services
+      -->
+      <section class="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-10">
+              <h1 class="services__title">Advice For Everyone</h1>
+              <p class="services__text">Vestibulum liero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nib Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vesum ante ipsum primis in faucibus orci luctus et ultrices posuere cubisse sollicitudin
+                velit sed leo. Ut pharetra augue nec auguem elit magna.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <section class="service-item">
+                <div class="service-item__icon service-item__icon--1"> <svg width="30" height="30">
+                    <use xlink:href="#map"></use>
+                  </svg> </div>
+                <h2 class="service-item__title">Route Selection</h2>
+                <p class="service-item__text">Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium duis sem feugiat.</p>
+              </section>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <section class="service-item sr-delay-015">
+                <div class="service-item__icon service-item__icon--2"> <svg width="30" height="30">
+                    <use xlink:href="#help"></use>
+                  </svg> </div>
+                <h2 class="service-item__title">24/7 Support</h2>
+                <p class="service-item__text">Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium duis sem feugiat.</p>
+              </section>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <section class="service-item sr-delay-03">
+                <div class="service-item__icon service-item__icon--3"> <svg width="30" height="30">
+                    <use xlink:href="#earth"></use>
+                  </svg> </div>
+                <h2 class="service-item__title">Wide Choice</h2>
+                <p class="service-item__text">Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium duis sem feugiat.</p>
+              </section>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <section class="service-item sr-delay-045">
+                <div class="service-item__icon service-item__icon--4"> <svg width="30" height="30">
+                    <use xlink:href="#plane"></use>
+                  </svg> </div>
+                <h2 class="service-item__title">Buy Tickets</h2>
+                <p class="service-item__text">Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium duis sem feugiat.</p>
+              </section>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row promo__info">
-          <div class="promo__title">San Francisco</div>
-          <p class="promo__text">Mauris fermentum tortor non enim aliquet ndimentum. Nam aliquam pretium sem feugiat. Duis sem est, viverra eu interdum.</p><a class="btn btn--md">More About This</a> </div>
-      </div>
-    </div>
-    <section class="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-10">
-            <h1 class="services__title">Advice For Everyone</h1>
-            <p class="services__text">Vestibulum liero nisl, porta vel, scelerisque eget, malesuada at, neque. Vivamus eget nib Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vesum ante ipsum primis in faucibus orci luctus et ultrices posuere cubisse sollicitudin
-              velit sed leo. Ut pharetra augue nec auguem elit magna.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <section class="service-item">
-              <div class="service-item__icon"> <svg width="30" height="30">
-                  <use xlink:href="#map"></use>
-                </svg> </div>
-              <h2 class="service-item__title">Route Selection</h2>
-              <p class="service-item__text">Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium duis sem feugiat.</p>
-            </section>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <section class="service-item">
-              <div class="service-item__icon"> <svg width="30" height="30">
-                  <use xlink:href="#help"></use>
-                </svg> </div>
-              <h2 class="service-item__title">24/7 Support</h2>
-              <p class="service-item__text">Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium duis sem feugiat.</p>
-            </section>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <section class="service-item">
-              <div class="service-item__icon"> <svg width="30" height="30">
-                  <use xlink:href="#earth"></use>
-                </svg> </div>
-              <h2 class="service-item__title">Wide Choice</h2>
-              <p class="service-item__text">Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium duis sem feugiat.</p>
-            </section>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <section class="service-item">
-              <div class="service-item__icon"> <svg width="30" height="30">
-                  <use xlink:href="#plane"></use>
-                </svg> </div>
-              <h2 class="service-item__title">Buy Tickets</h2>
-              <p class="service-item__text">Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium duis sem feugiat.</p>
-            </section>
-          </div>
+      </section>
+      <div class="promo-line promo-line--purple">
+        <div class="container">
+          <div class="row promo-line__info">
+            <p class="promo-line__text">Need useful advice? You're in the right place!</p><a class="btn btn--md sr-btn sr-delay-015">Contact Us For This</a> </div>
         </div>
       </div>
-    </section>
-    <div class="promo-line promo-line--purple">
-      <div class="container">
-        <div class="row promo-line__info">
-          <p class="promo-line__text">Need useful advice? You're in the right place!</p><a class="btn btn--md">Contact Us For This</a> </div>
-      </div>
-    </div>
-    <section class="popular">
-      <div class="container">
-        <div class="row">
-          <h2 class="section-title">Popular Destinations</h2> </div>
-        <div class="row popular__wrapper">
-          <article class="popular-item">
-            <div class="popular-item__image"><img src="img/dest_melbourne.jpg"></div>
-            <div class="popular-item__info">
-              <h3 class="popular-item__title"><a href="#" class="popular-item__link">Melbourne</a><span class="popular-item__price"> from 1400$</span></h3>
-              <p class="popular-item__text">Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.. Nam aliquam pretium duis sem feugiat condimentum mauris sem.. Nam aliquam pretium duis sem feugiat condimentum mauris
-                sem.</p><a href="#" class="btn btn--md">More About This</a> </div>
-          </article>
-          <article class="popular-item">
-            <div class="popular-item__image"><img src="img/dest_chicago.jpg"></div>
-            <div class="popular-item__info">
-              <h3 class="popular-item__title"><a href="#" class="popular-item__link">Chicago</a><span class="popular-item__price">from 900$</span></h3>
-              <p class="popular-item__text">Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.</p><a href="#" class="btn btn--md">More About This</a> </div>
-          </article>
-          <article class="popular-item">
-            <div class="popular-item__image"><img src="img/dest_colorado.jpg"></div>
-            <div class="popular-item__info">
-              <h3 class="popular-item__title"><a href="#" class="popular-item__link">Westminster</a><span class="popular-item__price">from 1200$</span></h3>
-              <p class="popular-item__text">Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.</p><a href="#" class="btn btn--md">More About This</a> </div>
-          </article>
-          <article class="popular-item">
-            <div class="popular-item__image"><img src="img/dest_venice.jpg"></div>
-            <div class="popular-item__info">
-              <h3 class="popular-item__title"><a href="#" class="popular-item__link">Venesia</a><span class="popular-item__price">from 1600$</span></h3>
-              <p class="popular-item__text">Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.</p><a href="#" class="btn btn--md">More About This</a> </div>
-          </article>
-          <article class="popular-item">
-            <div class="popular-item__image"><img src="img/dest_newyork.jpg"></div>
-            <div class="popular-item__info">
-              <h3 class="popular-item__title"><a href="#" class="popular-item__link">New York</a><span class="popular-item__price">from 1700$</span></h3>
-              <p class="popular-item__text">Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.</p><a href="#" class="btn btn--md">More About This</a> </div>
-          </article>
-          <article class="popular-item">
-            <div class="popular-item__image"><img src="img/dest_istanbul.jpg"></div>
-            <div class="popular-item__info">
-              <h3 class="popular-item__title"><a href="#" class="popular-item__link">Istanbul</a><span class="popular-item__price">from 1300$</span></h3>
-              <p class="popular-item__text">Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.</p><a href="#" class="btn btn--md">More About This</a> </div>
-          </article>
+      <!--Popular destinations
+      -->
+      <section class="popular-destinations">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title">Popular Destinations</h2> </div>
+          <div class="row popular__wrapper">
+            <article class="destination-item">
+              <a href="#" class="destination-item__image"><img src="img/dest_melbourne.jpg"><span class="destination-item__see-more"></span></a>
+              <div class="destination-item__info">
+                <h3 class="destination-item__title"><a href="#" class="destination-item__link">Melbourne</a><span class="destination-item__price"> from 1400$</span></h3>
+                <p class="destination-item__text">Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.. Nam aliquam pretium duis sem feugiat condimentum mauris sem.. Nam aliquam pretium duis sem feugiat condimentum mauris
+                  sem.</p><a href="#" class="btn btn--md">More About This</a> </div>
+            </article>
+            <article class="destination-item">
+              <a href="#" class="destination-item__image"><img src="img/dest_chicago.jpg"><span class="destination-item__see-more"></span></a>
+              <div class="destination-item__info">
+                <h3 class="destination-item__title"><a href="#" class="destination-item__link">Chicago</a><span class="destination-item__price">from 900$</span></h3>
+                <p class="destination-item__text">Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.</p><a href="#" class="btn btn--md">More About This</a> </div>
+            </article>
+            <article class="destination-item">
+              <a href="#" class="destination-item__image"><img src="img/dest_colorado.jpg"><span class="destination-item__see-more"></span></a>
+              <div class="destination-item__info">
+                <h3 class="destination-item__title"><a href="#" class="destination-item__link">Westminster</a><span class="destination-item__price">from 1200$</span></h3>
+                <p class="populdestination__text">Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.</p><a href="#" class="btn btn--md">More About This</a> </div>
+            </article>
+            <article class="destination-item">
+              <a href="#" class="destination-item__image"><img src="img/dest_venice.jpg"><span class="destination-item__see-more"></span></a>
+              <div class="destination-item__info">
+                <h3 class="destination-item__title"><a href="#" class="destination-item__link">Venesia</a><span class="destination-item__price">from 1600$</span></h3>
+                <p class="destination-item__text">Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.</p><a href="#" class="btn btn--md">More About This</a> </div>
+            </article>
+            <article class="destination-item">
+              <a href="#" class="destination-item__image"><img src="img/dest_newyork.jpg"><span class="destination-item__see-more"></span></a>
+              <div class="destination-item__info">
+                <h3 class="destination-item__title"><a href="#" class="destination-item__link">New York</a><span class="destination-item__price">from 1700$</span></h3>
+                <p class="destination-item__text">Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.</p><a href="#" class="btn btn--md">More About This</a> </div>
+            </article>
+            <article class="destination-item">
+              <a href="#" class="destination-item__image"><img src="img/dest_istanbul.jpg"><span class="destination-item__see-more"></span></a>
+              <div class="destination-item__info">
+                <h3 class="destination-item__title"><a href="#" class="destination-item__link">Istanbul</a><span class="destination-item__price">from 1300$</span></h3>
+                <p class="destination-item__text">Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.</p><a href="#" class="btn btn--md">More About This</a> </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
-    <div class="promo-line">
-      <div class="container">
-        <div class="row promo-line__info">
-          <p class="promo-line__text">Love discounts? Subscribe to newsletter!</p>
-          <form class="subscription"> <input type="text" placeholder="Your email" class="field field--medium"> <input type="submit" value="Subscribe" class="btn btn--md btn--white"> </form>
-        </div>
-      </div>
-    </div>
-    <section class="reviews">
-      <div class="container">
-        <div class="row">
-          <h2 class="section-title">Testimonials</h2> </div>
-        <div class="row reviews__wrapper">
-          <div class="review-item"><img src="img/review-author_1.png" class="review-item__image">
-            <blockquote>
-              <p class="review-item__text">Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus. Vestibulum faucibus scelerisque nisl vitae scelerisque. Sed tristique metus eu quam viverra malesuada. Cras porta eros nec libero quis bibendum
-                sed faucibus felis fringilla.vitae scelerisque. Sed tristique metus eu quam viverra malesuada. Cras porta eros nec libero quis bibendum sed faucibus felis fringilla.</p> <cite class="review-item__author"><span class="review-item__author-name">Marco Polo, </span><span class="review-item__author-job">partner sales.</span></cite>              </blockquote>
-          </div>
-          <div class="review-item"><img src="img/review-author_2.png" class="review-item__image">
-            <blockquote>
-              <p class="review-item__text">Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus. Vestibulum faucibus scelerisque nisl vitae scelerisque. Sed tristique metus eu quam viverra malesuada. Cras porta eros nec libero quis bibendum
-                sed faucibus felis fringilla.</p> <cite class="review-item__author"><span class="review-item__author-name">Tim Barkley,</span> <span class="review-item__author-job">manager.</span>
-              </cite> </blockquote>
-          </div>
-          <div class="review-item"><img src="img/review-author_3.png" class="review-item__image">
-            <blockquote>
-              <p class="review-item__text">Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus. Vestibulum faucibus scelerisque nisl vitae scelerisque. Sed tristique metus eu quam viverra malesuada. Cras porta eros nec libero quis bibendum
-                sed faucibus felis fringilla.</p> <cite class="review-item__author"><span class="review-item__author-name">Lisa Whistler,</span> <span class="review-item__author-job">consultant.</span>
-              </cite> </blockquote>
-          </div>
-          <div class="review-item"><img src="img/review-author_4.png" class="review-item__image">
-            <blockquote>
-              <p class="review-item__text">Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus. Vestibulum faucibus scelerisque nisl vitae scelerisque. Sed tristique metus eu quam viverra malesuada. Cras porta eros nec libero quis bibendum
-                sed faucibus felis fringilla.</p> <cite class="review-item__author"><span class="review-item__author-name">Mr. John Anderson,</span> <span class="review-item__author-job">designer.</span>
-              </cite> </blockquote>
+      </section>
+      <div class="promo-line">
+        <div class="container">
+          <div class="row promo-line__info">
+            <p class="promo-line__text">Love discounts? Subscribe to newsletter!</p>
+            <form class="subscription">
+              <div class="field__wrapper"> <input type="text" placeholder="Your email" class="field field--medium"><span class="field__underline field__underline--medium"></span> </div> <input type="submit" value="Subscribe" class="btn btn--md btn--white"> </form>
           </div>
         </div>
       </div>
-    </section>
+      <!--Reviews
+      -->
+      <section class="reviews">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title">Testimonials</h2> </div>
+          <div class="row reviews__wrapper">
+            <div class="review-item"><img src="img/review-author_1.png" class="review-item__image">
+              <blockquote>
+                <p class="review-item__text">Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus. Vestibulum faucibus scelerisque nisl vitae scelerisque. Sed tristique metus eu quam viverra malesuada. Cras porta eros nec libero quis bibendum
+                  sed faucibus felis fringilla.vitae scelerisque. Sed tristique metus eu quam viverra malesuada. Cras porta eros nec libero quis bibendum sed faucibus felis fringilla.</p> <cite class="review-item__author"><span class="review-item__author-name">Marco Polo, </span><span class="review-item__author-job">partner sales.</span></cite>                </blockquote>
+            </div>
+            <div class="review-item"><img src="img/review-author_2.png" class="review-item__image">
+              <blockquote>
+                <p class="review-item__text">Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus. Vestibulum faucibus scelerisque nisl vitae scelerisque. Sed tristique metus eu quam viverra malesuada. Cras porta eros nec libero quis bibendum
+                  sed faucibus felis fringilla.</p> <cite class="review-item__author"><span class="review-item__author-name">Tim Barkley,</span> <span class="review-item__author-job">manager.</span>
+                </cite> </blockquote>
+            </div>
+            <div class="review-item"><img src="img/review-author_3.png" class="review-item__image">
+              <blockquote>
+                <p class="review-item__text">Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus. Vestibulum faucibus scelerisque nisl vitae scelerisque. Sed tristique metus eu quam viverra malesuada. Cras porta eros nec libero quis bibendum
+                  sed faucibus felis fringilla.</p> <cite class="review-item__author"><span class="review-item__author-name">Lisa Whistler,</span> <span class="review-item__author-job">consultant.</span>
+                </cite> </blockquote>
+            </div>
+            <div class="review-item"><img src="img/review-author_4.png" class="review-item__image">
+              <blockquote>
+                <p class="review-item__text">Ut viverra mauris justo, quis auctor nisi. Suspendisse sit amet diam diam, eget volutpat lacus. Vestibulum faucibus scelerisque nisl vitae scelerisque. Sed tristique metus eu quam viverra malesuada. Cras porta eros nec libero quis bibendum
+                  sed faucibus felis fringilla.</p> <cite class="review-item__author"><span class="review-item__author-name">Mr. John Anderson,</span> <span class="review-item__author-job">designer.</span>
+                </cite> </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer
+    -->
     <footer class="page-footer">
       <div class="container">
         <div class="row footer-rows__wrapper">

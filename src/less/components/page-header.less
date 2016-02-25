@@ -63,6 +63,11 @@ Page Header
 	&__brand {
 		color: @color__white;
 		font-size: 3rem;
+
+		&:hover {
+			color: @color__white;
+		}
+
 		& img, span {
 			display: inline-block;
 			vertical-align: middle;
@@ -82,19 +87,28 @@ Page Header
 		display: inline-block;
 		width: 19px;
 		text-align: center;
-		// margin-right: 20px;
 		color: rgba(255,255,255, 0.75);
-	}
 
-	&__item:last-child {
-		margin-right: 0;
+		&:last-child {
+			margin-right: 0;
+		}
+
+		svg {
+			fill: rgba(255,255,255, 0.75);
+			transition: fill 0.4s;
+		}
+
+		&:hover svg {
+			fill: lighten(@color__pink, 5%)
+		}
 	}
 
 	.media-tablet ({
 		text-align: right;
-
 	});
 }
+
+// Main navigation
 
 .main-nav__wrapper {
 	height: 3em;
@@ -216,10 +230,11 @@ Page Header
 		padding: 1em;
 		color: #fff;
 		text-align: left;
+		transition: color 0.4s;
 
 		&:hover {
 			background-color: lighten(@color__purple, 5%);
-		color: @color__white;
+			color: @color__white;
 		}
 	}
 

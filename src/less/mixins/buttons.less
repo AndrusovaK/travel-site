@@ -19,12 +19,18 @@
   border-radius: @border-radius;
   box-shadow: @box-shadow;
   text-decoration: none;
+  transition: all 0.4s;
 
 
   // &--hover,
   &:hover {
     box-shadow: @box-shadow__hover;
-    color: @color__white
+    color: @color__white;
+    background-color: lighten(@color__pink, 5%);
+  }
+
+  &:active {
+    background-color: darken(@color__pink, 8%);
   }
 }
 
@@ -40,5 +46,6 @@
   background-color: @background;
   &:hover {
     color: @color;
+    background-color: @background;
   }
 }

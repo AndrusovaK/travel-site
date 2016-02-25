@@ -1,0 +1,51 @@
+.services {
+	padding-top: 80px;
+	& .row {
+		.main-center();
+		text-align: center;
+	}
+
+	&__text {
+		font-size: @font-size--large;
+	}
+}
+
+.service-item {
+	.row & {
+		padding: 25px 0;
+		.media-tablet({
+			min-height: 340px;
+			padding: 53px 0;
+			});
+	}
+
+	&__title {
+		.h3();
+	}
+
+	&__icon {
+		color: @color__pink;
+
+		& svg {
+			fill: currentColor;
+			transition: 0.4s ease;
+		}
+
+		&--1:hover svg {
+			transform: rotateY(180deg);
+		}
+
+		&--2:hover svg {
+			transform: rotateX(180deg);
+		}
+
+		&--3:hover svg {
+			transform:rotate(360deg);
+		}
+
+		&--4:hover svg {
+			transform: rotate(270deg);
+		}
+
+	}
+}

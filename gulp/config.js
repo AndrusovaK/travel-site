@@ -4,7 +4,7 @@ module.exports = {
             Src: {
                 Styles: 'src/less/**/*.less',
                 MainStyleFile: 'src/less/main.less',
-                Jade: 'src/jade/*.jade',
+                Jade: 'src/jade/**/*.jade',
                 Images: ['src/img/**/*.*', '!src/img/sprite/*.*'],
                 PngSprite: 'src/img/sprite/**/*.png',
                 GHPages: 'dist/**/*',

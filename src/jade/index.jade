@@ -1,24 +1,38 @@
 doctype html
-html(lang="ru")
+html(lang="ru").no-js
 	include components/head
 	body
+		//Header
 		include components/header
-		include components/slider
-		include components/about
-		.promo-line.promo-line--purple
-			.container
-				.row.promo-line__info
-					p.promo-line__text Need useful advice? You're in the right place!
-					a.btn.btn--md Contact Us For This
-		include components/popular
-		.promo-line
-			.container
-				.row.promo-line__info
-					p.promo-line__text Love discounts? Subscribe to newsletter!
-					form.subscription
-						input(type="text", placeholder="Your email").field.field--medium
-						input(type="submit" value="Subscribe").btn.btn--md.btn--white
-		include components/reviews
+		//
+			Main
+		main
+			include components/slider
+			//
+				Services
+			include components/services
+			.promo-line.promo-line--purple
+				.container
+					.row.promo-line__info
+						p.promo-line__text Need useful advice? You're in the right place!
+						a.btn.btn--md.sr-btn.sr-delay-015 Contact Us For This
+			//
+				Popular destinations
+			include components/popular
+			.promo-line
+				.container
+					.row.promo-line__info
+						p.promo-line__text Love discounts? Subscribe to newsletter!
+						form.subscription
+							.field__wrapper
+								input(type="text", placeholder="Your email").field.field--medium
+								span.field__underline.field__underline--medium
+							input(type="submit" value="Subscribe").btn.btn--md.btn--white
+			//
+				Reviews
+			include components/reviews
+		//
+			Footer
 		include components/footer
 
 		script(type="text/javascript", src="js/vendor/vendor-bundle.min.js")

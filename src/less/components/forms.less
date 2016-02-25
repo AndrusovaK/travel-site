@@ -6,23 +6,73 @@ textarea {
 	height: @field-height;
 	line-height: @field-line-height;
 	padding: @field-padding;
+
+	&:focus {
+		outline: none;
+	}
 }
 
+
 .field{
+
+	&__wrapper {
+		margin-bottom: 1rem;
+		position: relative;
+	}
+
 	// width: 285px;
 
 
-	margin-bottom: 1rem;
+
 
 	&--medium {
 		width: 285px;
 	}
 
-	&:focus {
-		border-bottom-color: @color__pink;
-	}
+	// &:focus {
+	// 	border-bottom-color: @color__pink;
+	// }
 
 	.media-full({
 		margin-right: 2.3rem;
 	});
+
+}
+
+
+// Bottom underline of input, textarea
+
+.field__underline {
+	position: relative;
+	display: block;
+	width: 210px;
+
+	&--medium {
+		width: 285px;
+	}
+
+	&:before, &:after {
+		content:'';
+		height:2px;
+		width:0;
+		bottom:1px;
+		position: absolute;
+		background: @color__pink;
+		transition:0.2s ease all;
+	}
+
+	&:before {
+		left: 50%;
+	}
+
+	&:after {
+		right: 50%;
+	}
+}
+
+// Active state
+
+input:focus ~ .field__underline:before,
+input:focus ~ .field__underline:after {
+	width: 50%;
 }

@@ -11,7 +11,7 @@
 }
 
 
-.popular {
+.popular-destinations {
 	padding: 35px 0 65px 0;
 }
 
@@ -20,59 +20,3 @@
 	padding: 0 15px;
 }
 
-.popular-item {
-	display: flex;
-	.column-dir();
-	.main-between();
-	.shadowed-box--light();
-	margin-bottom: 3rem;
-
-	.media-sm({
-		flex-basis: 48%;
-		});
-
-	.media-tablet({
-		flex-basis: 31.5%;
-	});
-
-	&__image {
-		width: 100%;
-		max-height: 243px;
-		overflow: hidden;
-		border-top-left-radius: @border-radius;
-		border-top-right-radius: @border-radius;
-
-		img {
-			width: 100%;
-		}
-
-
-	}
-
-	&__info {
-		padding: 0 21px 30px;
-		flex-grow: 5;
-		display: flex;
-		.column-dir();
-		.cross-start();
-
-		.btn {
-			margin-top: auto;
-		}
-	}
-
-	&__title {
-
-	}
-
-	&__link {
-		.h3();
-
-		margin-right: 14px;
-	}
-
-	&__price {
-		font-size: @font-size--large;
-		color: @color__purple;
-	}
-}

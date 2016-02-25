@@ -1,5 +1,6 @@
 /bower_components
 /build
+/dist
 
 # Created by .ignore support plugin (hsz.mobi)
 ### OSX template
@@ -34,6 +35,7 @@ Temporary Items
 nbproject/private/
 nbbuild/
 nbdist/
+dist/
 nbactions.xml
 nb-configuration.xml
 .nb-gradle/
