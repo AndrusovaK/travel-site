@@ -1,0 +1,144 @@
+- var breadcrumbs = {'Home':'index.html', 'Destinations':'destinations.html'}
+
+doctype html
+html(lang="ru").no-js
+	include components/head
+	body
+		//Header
+		include components/header
+		//
+			Main
+		main
+			.container
+				.row
+					.col-xs-12
+						include components/breadcrumbs
+				.row
+					.col-xs-12
+						h1.page-title Destinations
+
+			section.destination-region
+				.container
+					.row
+						.col-xs-12
+							h2.section-title.section-title--underlined Europe
+							p.destination-region__text
+								|Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus. Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit.
+					.row.destinations__wrapper
+						article.destination-item
+							a(href='#').destination-item__image
+								img(src="img/dest_paris.jpg")
+								span.destination-item__see-more
+							.destination-item__info
+								h3.destination-item__title
+									a(href='#').destination-item__link Paris
+									span.destination-item__price from 1400$
+								p.destination-item__text Fermentum tortor non enim 	aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+								a(href="#").btn.btn--md More About This
+						article.destination-item
+							a(href='#').destination-item__image
+								img(src="img/dest_istanbul.jpg")
+								span.destination-item__see-more
+							.destination-item__info
+								h3.destination-item__title
+									a(href='#').destination-item__link Istanbul
+									span.destination-item__price from 1300$
+								p.destination-item__text Fermentum tortor non enim 	aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+								a(href="#").btn.btn--md More About This
+						article.destination-item
+							a(href='#').destination-item__image
+								img(src="img/dest_venice.jpg")
+								span.destination-item__see-more
+							.destination-item__info
+								h3.destination-item__title
+									a(href='#').destination-item__link Venesia
+									span.destination-item__price from 1600$
+								p.destination-item__text Fermentum tortor non enim 	aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+								a(href="#").btn.btn--md More About This
+
+			section.destination-region
+				.container
+					.row
+						.col-xs-12
+							h2.section-title.section-title--underlined Asia
+							p.destination-region__text
+								|Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus. Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit.
+					.row.destinations__wrapper
+						article.destination-item
+							a(href='#').destination-item__image
+								img(src="img/dest_mumbai.jpg")
+								span.destination-item__see-more
+							.destination-item__info
+								h3.destination-item__title
+									a(href='#').destination-item__link Mumbai
+									span.destination-item__price from 2400$
+								p.destination-item__text Fermentum tortor non enim 	aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+								a(href="#").btn.btn--md More About This
+						article.destination-item
+							a(href='#').destination-item__image
+								img(src="img/dest_pekin.jpg")
+								span.destination-item__see-more
+							.destination-item__info
+								h3.destination-item__title
+									a(href='#').destination-item__link Pekin
+									span.destination-item__price from 1000$
+								p.destination-item__text Fermentum tortor non enim 	aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+								a(href="#").btn.btn--md More About This
+						article.destination-item
+							a(href='#').destination-item__image
+								img(src="img/dest_bangkok.jpg")
+								span.destination-item__see-more
+							.destination-item__info
+								h3.destination-item__title
+									a(href='#').destination-item__link Bangkok
+									span.destination-item__price from 1600$
+								p.destination-item__text Fermentum tortor non enim 	aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+								a(href="#").btn.btn--md More About This
+
+			section.destination-region
+				.container
+					.row
+						.col-xs-12
+							h2.section-title.section-title--underlined America
+							p.destination-region__text
+								|Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus. Mauris fermentum tortor non enim aliquet condimentum. Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit.
+					.row.destinations__wrapper
+						article.destination-item
+							a(href='#').destination-item__image
+								img(src="img/dest_colorado.jpg")
+								span.destination-item__see-more
+							.destination-item__info
+								h3.destination-item__title
+									a(href='#').destination-item__link Westminster
+									span.destination-item__price from 1200$
+								p.populdestination__text Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+								a(href="#").btn.btn--md More About This
+						article.destination-item
+							a(href='#').destination-item__image
+								img(src="img/dest_newyork.jpg")
+								span.destination-item__see-more
+							.destination-item__info
+								h3.destination-item__title
+									a(href='#').destination-item__link New York
+									span.destination-item__price from 1700$
+								p.destination-item__text Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+								a(href="#").btn.btn--md More About This
+						article.destination-item
+							a(href='#').destination-item__image
+								img(src="img/dest_chicago.jpg")
+								span.destination-item__see-more
+							.destination-item__info
+								h3.destination-item__title
+									a(href='#').destination-item__link Chicago
+									span.destination-item__price from 900$
+								p.destination-item__text Fermentum tortor non enim aliquet mauris del condimentum. Nam aliquam pretium duis sem feugiat condimentum mauris sem.
+								a(href="#").btn.btn--md More About This
+
+
+			//
+				Footer
+			include components/footer
+
+		script(type="text/javascript", src="js/vendor/vendor-bundle.min.js")
+		script(type='text/javascript', src=' http://code.jquery.com/jquery-migrate-1.3.0.min.js')
+		script(type="text/javascript", src='js/custom/custom-bundle.js')
