@@ -204,6 +204,9 @@ body {
 a {
     color : #653eb3;
     text-decoration : none;
+
+    -webkit-transition : all .4s;
+            transition : all .4s;
 }
 a:hover {
     color : #fb4381;
@@ -902,7 +905,7 @@ h4 {
     font-size : 1.8rem;
 }
 h5 {
-    font-size : 1.5rem;
+    font-size : 1.6rem;
 }
 h6 {
     font-size : 1.2rem;
@@ -1918,7 +1921,7 @@ Page Header
 .popular-destinations {
     padding : 35px 0 65px 0;
 }
-.popular__wrapper {
+.destinations__wrapper {
     -webkit-justify-content : space-between;
             justify-content : space-between;
     padding : 0 15px;
@@ -2507,4 +2510,74 @@ input:focus ~ .field__underline:before, input:focus ~ .field__underline:after {
     font-size : 2.2rem;
     line-height : 1.3em;
     color : #3e3e3e;
+}
+.destination-region {
+    padding-top : 30px;
+}
+.destination-region:last-of-type {
+    padding-bottom : 90px;
+}
+.destination-region__text {
+    margin-bottom : 30px;
+}
+.review-item--fullwidth {
+    width : 100%;
+}
+.categories, .archives, .recent-post {
+    margin-bottom : 30px;
+    padding : 12.5px 30px 30px;
+
+    background-color : #fff;
+    border-radius : .3rem;
+    box-shadow : 0 1px 3px rgba(0, 0, 0, .15);
+}
+.recent-post__item {
+    padding : 17px 0 30px;
+}
+.recent-post__item:last-child {
+    padding-bottom : 0;
+}
+.recent-post__item:nth-last-child(n+2) {
+    border-bottom : 1px solid #8c8c8c;
+}
+.recent-post__lead {
+    font-size : 1.4rem;
+}
+.recent-post__date {
+    font-weight : 700;
+    font-size : 1.2rem;
+}
+.dotted-list {
+    margin : 0;
+    padding : 0;
+
+    list-style : none;
+}
+.dotted-list__item {
+    font-size : 1.8rem;
+    line-height : 34px;
+}
+.dotted-list__link {
+    position : relative;
+
+    display : block;
+    padding-left : 20px;
+}
+.dotted-list__link:before {
+    content : "";
+    position : absolute;
+    top : 40%;
+    left : 0;
+
+    width : 9px;
+    height : 9px;
+
+    border : 1px solid #fb4381;
+    border-radius : 50%;
+
+    -webkit-transition : background-color .4s;
+            transition : background-color .4s;
+}
+.dotted-list__link:hover:before {
+    background-color : #f79ab9;
 }
