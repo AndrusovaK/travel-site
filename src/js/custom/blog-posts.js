@@ -1,6 +1,6 @@
 //AJAX - загрузка
 
-(function(){
+/*(function(){
 
 //получаем в переменную в виде массива все элементы
 	var postsArray = $.ajax({
@@ -34,7 +34,7 @@
 
 
 //- 	$('.blog-items').load('all-blog-posts.html');
-})();
+})();*/
 
 
 	(function() {
@@ -45,21 +45,34 @@
 			};
 
 
-			var content = $('.blog-post');
+			var content = $.ajax({
+				url: 'all-blog-posts.html',
+				async: false,
+				dataType: 'html',
+				error: function(){
+					console.log('loading error');
+				},
+				success: function(data){
+					console.log('load was performed');
+				}
+			}).responseText.split('<br/>');
+
 			console.log(content.length);
 			console.log(content);
 
 			var Paging = $("#pagination").paging(content.length, {
 					onSelect: function() {
 
-							/*var data = this.slice;
+							var data = this.slice;
 
-							content.slice(prev[0], prev[1]).css('display', 'none');
-							content.slice(data[0], data[1]).fadeIn("slow");
+							// content.slice(prev[0], prev[1]).html(data);
+							var singlePage = content.slice(data[0], data[1]);
+							console.log(singlePage);
+							$('.blog-items').html(singlePage);
 
 							prev = data;
 
-							return true; // locate!*/
+							return true; // locate!
 					},
 					onFormat: function(type) {
 
