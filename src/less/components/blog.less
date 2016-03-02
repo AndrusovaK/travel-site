@@ -50,3 +50,51 @@
 		margin-bottom: 30px;
 	}
 }
+
+//Pagination
+
+.pagination {
+	text-align: center;
+
+	&__link {
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 11px 16px;
+		font-size: @font-size--medium;
+		color: @color__gray-dark;
+		position: relative;
+	}
+
+	&__link:before {
+		content: '';
+		position: absolute;
+		height: 3px;
+		left: 50%;
+		bottom: 100%;
+		width: 0;
+		background-color: @color__pink;
+		transition: 0.2s ease;
+	}
+
+
+	&__link--active {
+		font-weight: 700;
+
+		&:before {
+			width: 100%;
+			left: 0;
+		}
+	}
+
+
+	&__link:hover {
+		color:  @color__gray-dark;
+
+		&:before {
+			width: 100%;
+			left: 0;
+		}
+	}
+
+
+}

@@ -106,7 +106,7 @@ html(lang="ru").no-js
 							p.blog-post__text Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi…
 							a.btn.btn--medium Read more
 
-						div#pagination
+						div.pagination#pagination
 
 
 
@@ -156,8 +156,8 @@ html(lang="ru").no-js
 													if (!this.active)
 															return '<span class="disabled">' + this.value + '</span>';
 													else if (this.value != this.page)
-															return '<em><a href="#' + this.value + '">' + this.value + '</a></em>';
-													return '<span class="current">' + this.value + '</span>';
+															return '<a class="pagination__link" href="#' + this.value + '">' + this.value + '</a>';
+													return '<span class="pagination__link pagination__link--active">' + this.value + '</span>';
 
 											case 'right':
 											case 'left':
@@ -170,30 +170,30 @@ html(lang="ru").no-js
 											case 'next':
 
 													if (this.active) {
-															return '<a href="#' + this.value + '" class="next">Next</a>';
+															return '<a href="#' + this.value + '" class="pagination__link">Next</a>';
 													}
-													return '<span style="display:none" class="disabled">Next</span>';
+													return '<span style="display:none">Next</span>';
 
 											case 'prev':
 
 													if (this.active) {
-															return '<a href="#' + this.value + '" class="prev">Previous</a>';
+															return '<a href="#' + this.value + '" class="pagination__link">Previous</a>';
 													}
-													return '<span style="display:none" class="disabled">Previous</span>';
+													return '<span style="display:none">Previous</span>';
 
 											case 'first':
 
 													if (this.active) {
-															return '<a href="#' + this.value + '" class="first">First</a>';
+															return '<a href="#' + this.value + '" class="pagination__link">First</a>';
 													}
-													return '<span style="display:none" class="disabled">First</span>';
+													return '<span style="display:none">First</span>';
 
 											case 'last':
 
 													if (this.active) {
-															return '<a href="#' + this.value + '" class="prev">Last</a>';
+															return '<a href="#' + this.value + '" class="pagination__link">Last</a>';
 													}
-													return '<span style="display:none" class="disabled">Last</span>';
+													return '<span style="display:none">Last</span>';
 
 											case 'fill':
 													if (this.active) {
