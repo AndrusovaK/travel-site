@@ -1,0 +1,55 @@
+- var breadcrumbs = {'Home':'index.html', 'Gallery':'gallery.html'}
+
+doctype html
+html(lang="ru").no-js
+	include components/head
+	body
+		//Header
+		include components/header
+		//
+			Main
+		main
+			.container
+				.row
+					.col-xs-12
+						include components/breadcrumbs
+				.row
+					.col-xs-12
+						h1.page-title Gallery of TripWay
+
+			nav.gallery-nav
+				.container
+					.row
+						.col-xs-12
+							ul.gallery-nav__list
+								li.gallery-nav__item
+									a(href="#" data-tab="europe")#europe.gallery-nav__link.gallery-nav__link--active Europe
+								li.gallery-nav__item
+									a(href="#" data-tab="africa")#africa.gallery-nav__link Africa
+								li.gallery-nav__item
+									a(href="#" data-tab="north-america")#north-america.gallery-nav__link North America
+								li.gallery-nav__item
+									a(href="#" data-tab="south-america")#south-america.gallery-nav__link South America
+								li.gallery-nav__item
+									a(href="#" data-tab="australia")#australia.gallery-nav__link Australia
+
+			.gallery-content
+				.container
+					//- include gallery-europe
+
+					.row#gallery-pagination-wrapper
+						div.pagination#gallery-pagination
+
+
+
+
+
+			//
+				Footer
+			include components/footer
+
+
+		script(type="text/javascript", src="js/vendor/vendor-bundle.min.js")
+		script(type='text/javascript', src=' http://code.jquery.com/jquery-migrate-1.3.0.min.js')
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/v1.3/jquery.ba-hashchange.js")
+		script(type="text/javascript", src='js/custom/custom-bundle.js')
