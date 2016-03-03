@@ -142,44 +142,7 @@ sr.reveal('.sr-delay-015', {delay: 150});
 sr.reveal('.sr-delay-03', {delay: 300});
 sr.reveal('.sr-delay-045', {delay: 450});
 
-//AJAX - загрузка
-
-/*(function(){
-
-//получаем в переменную в виде массива все элементы
-	var postsArray = $.ajax({
-		url: 'all-blog-posts.html',
-		async: false,
-		dataType: 'html',
-		//- dataFilter: function(response){
-		//- 	var postsArray = $(response).find('article.blog-post').toArray();
-		//- 	return postsArray;
-		//- },
-		error: function(){
-			console.log('loading error');
-		},
-		success: function(data){
-			console.log('load was performed');
-			//- console.log(data);
-			//- var allPosts = data.split('<br/>');
-			//- console.log(allPosts);
-			//- $('.blog-items').html(allPosts);
-		}
-	}).responseText.split('<br/>');
-
-	console.log(postsArray);
-	$('.blog-items').html(postsArray);
-
-
-//- $(function(postsArray) {
-//- 	var x = $(postsArray).split('<br/>');
-//- 	console.log(x);
-//- });
-
-
-//- 	$('.blog-items').load('all-blog-posts.html');
-})();*/
-
+//Пагинация: AJAX - подгрузка и нарезка
 
 	(function() {
 
@@ -208,15 +171,25 @@ sr.reveal('.sr-delay-045', {delay: 450});
 					onSelect: function() {
 
 							var data = this.slice;
-
 							// content.slice(prev[0], prev[1]).html(data);
 							var singlePage = content.slice(data[0], data[1]);
-							console.log(singlePage);
-							$('.blog-items').html(singlePage);
 
+							console.log(singlePage);
+
+							$('.blog-items').html(singlePage).css("display", "none").fadeIn(1000);
 							prev = data;
 
+							var currentPosition = $(document).scrollTop();
+							var scrollTime = currentPosition / 4;
+
+							$('body, html').animate({
+								scrollTop: 0
+							}, scrollTime);
+
 							return true; // locate!
+
+
+							// $('.pagination__link').on("click", function())
 					},
 					onFormat: function(type) {
 
