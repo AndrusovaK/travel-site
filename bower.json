@@ -14,6 +14,7 @@
   "devDependencies": {},
   "dependencies": {
     "slick-carousel": "^1.5.9",
-    "scrollreveal": "^3.0.9"
+    "scrollreveal": "^3.0.9",
+    "paging": "^1.2.0"
   }
 }
