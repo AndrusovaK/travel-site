@@ -70,7 +70,7 @@
                       </ul>
                     </li>
                     <li class="main-nav__item"><a href="destinations.html" class="main-nav__link">Destinations</a></li>
-                    <li class="main-nav__item main-nav__item--has-children"><a href="#" class="main-nav__link main-nav__link--has-children">Gallery
+                    <li class="main-nav__item main-nav__item--has-children"><a href="gallery.html" class="main-nav__link main-nav__link--has-children">Gallery
                         <svg width="8" height="4">
                           <use xlink:href="#arrow-down"></use>
                         </svg></a>
@@ -111,21 +111,28 @@
           <div class="col-xs-12">
             <h1 class="page-title">Gallery of TripWay</h1> </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <nav class="gallery-nav">
+      </div>
+      <nav class="gallery-nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
               <ul class="gallery-nav__list">
-                <li data-tab="europe" class="gallery-nav__item"></li>
-                <li data-tab="africa" class="gallery-nav__item"></li>
-                <li data-tab="north-america" class="gallery-nav__item"></li>
-                <li data-tab="south-america" class="gallery-nav__item"></li>
-                <li data-tab="australia" class="gallery-nav__item"></li>
+                <li class="gallery-nav__item"><a href="#" data-tab="europe" id="europe" class="gallery-nav__link gallery-nav__link--active">Europe</a></li>
+                <li class="gallery-nav__item"><a href="#" data-tab="africa" id="africa" class="gallery-nav__link">Africa</a></li>
+                <li class="gallery-nav__item"><a href="#" data-tab="north-america" id="north-america" class="gallery-nav__link">North America</a></li>
+                <li class="gallery-nav__item"><a href="#" data-tab="south-america" id="south-america" class="gallery-nav__link">South America</a></li>
+                <li class="gallery-nav__item"><a href="#" data-tab="australia" id="australia" class="gallery-nav__link">Australia</a></li>
               </ul>
-            </nav>
+            </div>
           </div>
         </div>
-        <div id="pagination-wrapper" class="row">
-          <div id="pagination" class="pagination"></div>
+      </nav>
+      <div class="gallery-content">
+        <div id="gallery-content__wrapper" class="container"> </div>
+      </div>
+      <div class="gallery-pagination">
+        <div class="container">
+          <div id="gallery-pagination" class="pagination"></div>
         </div>
       </div>
       <!--Footer
