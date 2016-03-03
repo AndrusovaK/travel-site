@@ -2639,7 +2639,7 @@ input:focus ~ .field__underline:before, input:focus ~ .field__underline:after {
 .pagination {
     text-align : center;
 }
-.pagination__link {
+.pagination__link, .pagination__link--disabled {
     position : relative;
 
     display : inline-block;

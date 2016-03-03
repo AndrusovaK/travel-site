@@ -56,7 +56,7 @@
 							case 'block':
 
 									if (!this.active)
-											return '<span class="disabled">' + this.value + '</span>';
+											return '<span class="pagination__link--disabled">' + this.value + '</span>';
 									else if (this.value != this.page)
 											return '<a class="pagination__link" href="#' + this.value + '">' + this.value + '</a>';
 									return '<span class="pagination__link pagination__link--active">' + this.value + '</span>';
@@ -121,6 +121,7 @@
 			$(window).hashchange();
 
 	}
+
 	pagination();
 
 	var navItem = $(".gallery-nav__link");
@@ -135,7 +136,9 @@
 		var tabUrl = $(this).data("tab");
 		url = 'gallery-' + tabUrl + '.html';
 		console.log(url);
-		content = [];
+
+		//очищаем хэш, чтобы загружалась первая вкладка
+		history.pushState('', document.title, window.location.pathname);
 
 		pagination();
 	});
