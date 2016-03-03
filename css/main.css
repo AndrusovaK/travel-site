@@ -2649,6 +2649,9 @@ input:focus ~ .field__underline:before, input:focus ~ .field__underline:after {
     color : #3e3e3e;
     text-transform : uppercase;
 }
+.pagination__link--disabled {
+    color : #8c8c8c;
+}
 .pagination__link:before {
     content : "";
     position : absolute;
@@ -2808,4 +2811,8 @@ input:focus ~ .field__underline:before, input:focus ~ .field__underline:after {
 
         -ms-flex-preferred-size : 23.2%;
     }
+}
+.gallery-pagination {
+    padding-top : 20px;
+    padding-bottom : 100px;
 }
