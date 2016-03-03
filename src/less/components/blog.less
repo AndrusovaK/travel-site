@@ -56,13 +56,18 @@
 .pagination {
 	text-align: center;
 
-	&__link {
+	&__link,
+	&__link--disabled {
 		text-transform: uppercase;
 		display: inline-block;
 		padding: 11px 16px;
 		font-size: @font-size--medium;
 		color: @color__gray-dark;
 		position: relative;
+	}
+
+	&__link--disabled {
+		color: @color__gray;
 	}
 
 	&__link:before {
