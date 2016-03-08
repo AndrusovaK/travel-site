@@ -48,7 +48,8 @@ $(function (){
 						scrollTop: 0
 					}, scrollTime);
 
-					galleryLoop();
+					// вызываем функцию галереи в модальном окне
+					galleryZoom();
 
 					return true; // locate!
 			},
@@ -145,7 +146,9 @@ $(function (){
 
 		// Вызываем функцию пагинации при клике на любой таб
 		pagination();
-		galleryLoop();
+
+		// вызываем функцию галереи в модальном окне
+		galleryZoom();
 	});
 
 });

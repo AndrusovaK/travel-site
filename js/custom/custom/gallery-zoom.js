@@ -1,6 +1,6 @@
 // Функция открытия изображения в модальном окне
 
-function galleryLoop() {
+function galleryZoom() {
 	var imageSelector = '.gallery-item__image img',
 			totalImages,
 			activeImage,
@@ -64,8 +64,8 @@ function galleryLoop() {
 	//Функция-обработчик закрытия модального окна
 	function closeModal() {
 		$('body').removeClass('lock');
-		$("#gallery-modal__controls").fadeOut(400);
-		$overlay.animate({'opacity': 0}, 400, function() {
+		$("#gallery-modal__controls").fadeOut(200);
+		$overlay.animate({'opacity': 0}, 200, function() {
 			$(this).css('display', 'none');
 		});
 	}

@@ -185,7 +185,10 @@
       </footer>
       <!-- Модальное окно-->
       <div id="gallery-modal__overlay">
-        <div id="gallery-modal"><span id="gallery-modal__close">x</span>
+        <div id="gallery-modal"><span id="gallery-modal__close">
+            <svg width="14" height="14">
+              <use xlink:href="#modal-close"></use>
+            </svg></span>
           <div id="gallery-modal__image"></div>
           <p class="gallery-modal__info"><span id="gallery-modal__image-title"></span><span id="gallery-modal__image-number"></span></p>
         </div>
@@ -200,7 +203,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/v1.3/jquery.ba-hashchange.js"></script>
     <script type="text/javascript" src="js/custom/custom-bundle.js"></script>
     <script>
-      $(window).load(galleryLoop);
+      $(window).load(galleryZoom);
     </script>
   </body>
 

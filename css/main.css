@@ -2900,6 +2900,7 @@ input:focus ~ .field__underline:before, input:focus ~ .field__underline:after {
             flex-wrap : nowrap;
     -webkit-justify-content : space-between;
             justify-content : space-between;
+    margin-top : 1em;
 
     color : #fff;
 
