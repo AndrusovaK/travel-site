@@ -183,11 +183,25 @@
           </div>
         </div>
       </footer>
+      <!-- Модальное окно-->
+      <div id="gallery-modal__overlay">
+        <div id="gallery-modal"><span id="gallery-modal__close">x</span>
+          <div id="gallery-modal__image"></div>
+          <p class="gallery-modal__info"><span id="gallery-modal__image-title"></span><span id="gallery-modal__image-number"></span></p>
+        </div>
+      </div>
+      <div id="gallery-modal__controls">
+        <div data-target="prev" class="control-btn prev">Previous</div>
+        <div data-target="next" class="control-btn next">Next</div>
+      </div>
     </main>
     <script type="text/javascript" src="js/vendor/vendor-bundle.min.js"></script>
     <script type="text/javascript" src=" http://code.jquery.com/jquery-migrate-1.3.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/v1.3/jquery.ba-hashchange.js"></script>
     <script type="text/javascript" src="js/custom/custom-bundle.js"></script>
+    <script>
+      $(window).load(galleryLoop);
+    </script>
   </body>
 
 </html>
