@@ -1,0 +1,14 @@
+// Модальное окно
+
+div#gallery-modal__overlay
+	div#gallery-modal
+		span#gallery-modal__close
+			svg(width='14', height='14')
+					use(xlink:href='#modal-close')
+		div#gallery-modal__image
+		p.gallery-modal__info
+			span#gallery-modal__image-title
+			span#gallery-modal__image-number
+div#gallery-modal__controls
+		div.control-btn.prev(data-target="prev") Previous
+		div.control-btn.next(data-target="next") Next

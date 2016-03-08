@@ -48,6 +48,9 @@ $(function (){
 						scrollTop: 0
 					}, scrollTime);
 
+					// вызываем функцию галереи в модальном окне
+					galleryZoom();
+
 					return true; // locate!
 			},
 			onFormat: function(type) {
@@ -122,7 +125,7 @@ $(function (){
 			$(window).hashchange();
 
 	}
-
+	// Вызываем функцию пагинации при загрузке страницы
 	pagination();
 
 	var navItem = $(".gallery-nav__link");
@@ -141,7 +144,11 @@ $(function (){
 		//очищаем хэш, чтобы загружалась первая вкладка
 		history.pushState('', document.title, window.location.pathname);
 
+		// Вызываем функцию пагинации при клике на любой таб
 		pagination();
+
+		// вызываем функцию галереи в модальном окне
+		galleryZoom();
 	});
 
 });

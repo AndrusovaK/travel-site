@@ -1,7 +1,7 @@
 mixin gallery-item(url, title, text)
 	article.gallery-item
 		div.gallery-item__image
-			img(src=url)
+			img(src=url, data-item__title=title)
 		div.gallery-item__info
 			h1.gallery-item__title=title
 			p.gallery-item__text=text
