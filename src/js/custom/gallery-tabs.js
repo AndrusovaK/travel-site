@@ -142,7 +142,7 @@ $(function (){
 		console.log(url);
 
 		//очищаем хэш, чтобы загружалась первая вкладка
-		history.pushState('', document.title, window.location.pathname);
+		history.pushState(null, document.title, window.location.pathname);
 
 		// Вызываем функцию пагинации при клике на любой таб
 		pagination();

@@ -10,5 +10,9 @@ div#gallery-modal__overlay
 			span#gallery-modal__image-title
 			span#gallery-modal__image-number
 div#gallery-modal__controls
-		div.control-btn.prev(data-target="prev") Previous
-		div.control-btn.next(data-target="next") Next
+		div.control-btn.prev(data-target="prev")
+			svg(width='35', height='35')
+				use(xlink:href='#modal-arrow-left')
+		div.control-btn.next(data-target="next")
+			svg(width='35', height='35')
+				use(xlink:href='#modal-arrow-right')

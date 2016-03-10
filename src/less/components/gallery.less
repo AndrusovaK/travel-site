@@ -7,15 +7,18 @@
 		padding: 0;
 		border-bottom: 3px solid #dcdcdc;
 		display: inline-block;
-
 	}
 
 	&__item {
-		display: inline-block;
+		display: block;
 
-		&:nth-child(n+2) {
-			margin-left: 35px;
-		}
+		.media-tablet({
+			display: inline-block;
+
+			&:nth-child(n+2) {
+				margin-left: 35px;
+			}
+		});
 	}
 
 	&__link {
@@ -57,6 +60,7 @@
 		max-height: 375px;
 		overflow: hidden;
 		cursor: pointer;
+		position: relative;
 
 		img {
 			width: 100%;
