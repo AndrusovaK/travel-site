@@ -2695,10 +2695,15 @@ input:focus ~ .field__underline:before, input:focus ~ .field__underline:after {
     border-bottom : 3px solid #dcdcdc;
 }
 .gallery-nav__item {
-    display : inline-block;
+    display : block;
 }
-.gallery-nav__item:nth-child(n+2) {
-    margin-left : 35px;
+@media (min-width: 768px) {
+    .gallery-nav__item {
+        display : inline-block;
+    }
+    .gallery-nav__item:nth-child(n+2) {
+        margin-left : 35px;
+    }
 }
 .gallery-nav__link {
     position : relative;
@@ -2744,6 +2749,8 @@ input:focus ~ .field__underline:before, input:focus ~ .field__underline:after {
     -ms-flex-preferred-size : 100%;
 }
 .gallery-item__image {
+    position : relative;
+
     width : 100%;
     max-height : 375px;
     overflow : hidden;
@@ -2823,16 +2830,18 @@ input:focus ~ .field__underline:before, input:focus ~ .field__underline:after {
 
     width : 768px;
     max-height : 570px;
+    padding : 0 15px;
 }
 #gallery-modal__image {
     width : 100%;
-    height : 512px;
+    width : auto;
     overflow : hidden;
 
     box-shadow : 0 0 15px #000;
 }
 #gallery-modal__image img {
     width : 100%;
+    width : auto;
 }
 #gallery-modal__close {
     display : block;
@@ -2842,6 +2851,15 @@ input:focus ~ .field__underline:before, input:focus ~ .field__underline:after {
     color : #fff;
 
     cursor : pointer;
+}
+#gallery-modal__close svg {
+    -webkit-transition : fill .3s;
+            transition : fill .3s;
+
+    fill : rgba(255, 255, 255, .75);
+}
+#gallery-modal__close svg:hover {
+    fill : rgba(255, 255, 255, .9);
 }
 #gallery-modal__overlay {
     position : fixed;
@@ -2875,21 +2893,43 @@ input:focus ~ .field__underline:before, input:focus ~ .field__underline:after {
 
     display : none;
     width : 100%;
+    margin-top : -45px;
     overflow : hidden;
+}
+.control-btn {
+    position : relative;
 
-    color : #fff;
+    width : 90px;
+    height : 90px;
+
+    color : rgba(255, 255, 255, .75);
+
+    background-color : rgba(0, 0, 0, .1);
+    border-radius : .3rem;
+    cursor : pointer;
+}
+.control-btn svg {
+    position : absolute;
+    top : 0;
+    right : 0;
+    bottom : 0;
+    left : 0;
+
+    margin : auto;
+
+    -webkit-transition : fill .3s;
+            transition : fill .3s;
+
+    fill : currentColor;
+}
+.control-btn svg:hover {
+    fill : rgba(255, 255, 255, .9);
 }
 .prev {
     float : left;
-    padding-left : 10px;
-
-    cursor : pointer;
 }
 .next {
     float : right;
-    padding-right : 10px;
-
-    cursor : pointer;
 }
 .gallery-modal__info {
     display : -webkit-box;
