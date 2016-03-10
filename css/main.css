@@ -2829,19 +2829,17 @@ input:focus ~ .field__underline:before, input:focus ~ .field__underline:after {
     z-index : 50;
 
     width : 768px;
-    max-height : 570px;
+    height : 570px;
     padding : 0 15px;
 }
 #gallery-modal__image {
     width : 100%;
-    width : auto;
     overflow : hidden;
 
     box-shadow : 0 0 15px #000;
 }
 #gallery-modal__image img {
     width : 100%;
-    width : auto;
 }
 #gallery-modal__close {
     display : block;
